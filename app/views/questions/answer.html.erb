@@ -1,0 +1,19 @@
+<div class="container-sm p-5">
+
+  <div class="card text-end mb-4">
+    <div class="card-body">
+      <p><%= params[:question] %></p>
+      <span>you, <%= Time.now.hour %>:<%= Time.now.strftime("%M") %> </span>
+    </div>
+  </div>
+
+  <div class="card bg-light mb-4">
+    <div class="card-body">
+      <p><%= @answer %></p>
+      <span>Coach, <%= Time.now.hour %>:<%= Time.now.strftime("%M") %> </span>
+    </div>
+  </div>
+
+  <%= link_to "Ask again!", ask_path, class: 'btn btn-primary' %>
+
+</div>

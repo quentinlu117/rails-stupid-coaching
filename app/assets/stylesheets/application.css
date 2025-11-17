@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+p {
+  margin: 0;
+}
+.card span {
+  font-size: 14px;
+  color: rgb(151, 151, 151);
+  font-style: italic;
+}
